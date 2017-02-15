@@ -2,7 +2,7 @@
 
 In this repo you can follow the step-by-step development of the `runes` example: a Go command-line utility to find Unicode characters by name.
 
-Each step in the development is documented explaining the Go language features used in the code. We follow a the TDD _(Test Driven Design)_ method, so we code a test and then implement the functionality being tested. This makes it easier to focus on the __what__ (the interface) before we think about the __how__ (the implementation).
+Each step in the development is documented explaining the Go language features used in the code. We follow the TDD _(Test Driven Design)_ method, so we code a test and then implement the functionality being tested. This makes it easier to focus on the __what__ (the interface) before we think about the __how__ (the implementation).
 
 You don't need to know Go to follow along. The only pre-requsite is to know programming in another language.
 
