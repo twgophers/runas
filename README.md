@@ -1,18 +1,18 @@
-# Runas: passo a passo com TDD
+# Runes: baby steps with TDD
 
-Neste repositório você pode ver o desenvolvimento passo a passo do exemplo `runas`: um utilitário em Go para localizar caracteres Unicode pelo nome.
+In this repo you can follow the step-by-step development of the `runes` example: a Go command-line utility to find Unicode characters by name.
 
-Cada etapa do desenvolvimento é documentada explicando os recursos da linguagem Go usados no código do exemplo.
+Each step in the development is documented explaining the Go language features used in the code. We follow a the TDD _(Test Driven Design)_ method, so we code a test and then implement the functionality being tested. This makes it easier to focus on the __what__ (the interface) before we think about the __how__ (the implementation).
 
-Você não precisa saber nada de Go para acompanhar. Os requisitos são conhecer alguma linguagem de programação moderna.
+You don't need to know Go to follow along. The only pre-requsite is to know programming in another language.
 
 
-## Nosso objetivo
+## Our goal
 
-Ao final desse tutorial, teremos um utilitário de linha de comando que faz isso:
+At the end of this tutorial, we'll have a command-line too which allows searching for Unicode characters, like emoji, by typing words that appear in the character name. For example:
 
 ```
-$ runas face eyes
+$ runes face eyes
 U+1F601	😁	GRINNING FACE WITH SMILING EYES
 U+1F604	😄	SMILING FACE WITH OPEN MOUTH AND SMILING EYES
 U+1F606	😆	SMILING FACE WITH OPEN MOUTH AND TIGHTLY-CLOSED EYES
@@ -27,11 +27,11 @@ U+1F63D	😽	KISSING CAT FACE WITH CLOSED EYES
 U+1F644	🙄	FACE WITH ROLLING EYES
 ```
 
-Você passa uma um mais palavras como argumento, e o programa devolve uma lista ordenada de caracteres Unicode cujas descrições contém todas as palavras que você passou.
+Give the `runes` command one or more words, and it returns a sorted list of all Unicode characters containing those words in their names.
 
-Leia mais nas [páginas do projeto](https://ThoughtWorksInc.github.io/runas/).
+To get started, go to the [project page](https://twgophers.github.io/runes/).
 
 
-## Créditos
+## Credits
 
-Este tutorial é baseado no exemplo `charfinder` do capítulo 18 de [Python Fluente](http://novatec.com.br/livros/pythonfluente/), de Luciano Ramalho. A versão Go, chamada `runefinder`, foi iniciada no grupo de estudos [Garoa Gophers](https://garoa.net.br/wiki/Garoa_Gophers), com a participação de Afonso Coutinho (@afonso), Alexandre Souza (@alexandre), Andrews Medina (@andrewsmedina), João "JC" Martins (@jcmartins), Luciano Ramalho (@ramalho), Marcio Ribeiro (@mmr) e Michael Howard.
+This tutorial is based on the `charfinder` example from chapter 18 of [Fluent Python](http://shop.oreilly.com/product/0636920032519.do), by Luciano Ramalho. The Go version called `runefinder` was started in the [Garoa Gophers](https://garoa.net.br/wiki/Garoa_Gophers) study group: Afonso Coutinho (@afonso), Alexandre Souza (@alexandre), Andrews Medina (@andrewsmedina), João "JC" Martins (@jcmartins), Luciano Ramalho (@ramalho), Marcio Ribeiro (@mmr) and Michael Howard.
